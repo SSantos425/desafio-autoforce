@@ -4,12 +4,8 @@ import "./controllers"
 import React from 'react';
 import { createRoot } from 'react-dom/client'
 
-function app() {
-    return (
-        <div>
-            <h1>Hello, React!</h1>
-        </div>
-    );
+function App() {
+    return (<h1>Hello, React!</h1>);
 }
 
 const root = createRoot(document.getElementById('root'));
