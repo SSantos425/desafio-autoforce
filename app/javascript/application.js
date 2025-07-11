@@ -1,12 +1,15 @@
-// Entry point for the build script in your package.json
 import "@hotwired/turbo-rails"
 import "./controllers"
 import React from 'react';
 import { createRoot } from 'react-dom/client'
+import BasicButtons from './components/header';
 
 function App() {
-    return (<h1>Hello, React!</h1>);
+    return (<> 
+        <BasicButtons /> 
+    </>);
 }
+
 
 const root = createRoot(document.getElementById('root'));
 root.render(<App />);

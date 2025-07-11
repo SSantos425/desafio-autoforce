@@ -1,2 +1,205 @@
-<div id=root></div>
+<div id="root"></div>
+<div class="page-container">
+  <div class="container">
+    <nav class="navbar">
+      <%= link_to root_path do %>
+        <%= image_tag "https://production.autoforce.com/uploads/group/logo/1814/logo_webp_comprar-dealer-seminovos_0759c60cac.png.webp", alt: "MinhaLogo", style: "height: 40px;" %>
+      <% end %>
+
+      <ul class="nav-links">
+        <li><%= link_to "Semi Novos", root_path %></li>
+        <li><%= link_to "Quem Somos", root_path %></li>
+        <li><%= link_to "Fale Conosco", root_path %></li>
+      </ul>
+
+      <%= form_with(url: root_path, method: :get, local: true) do |form| %>
+          <%= form.text_field :query, placeholder: "Buscar...", class: 'search-container' %>
+          <%= button_tag(type: 'submit', class: 'search-button ') do %>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <% end %>
+      <% end %>
+    </nav>
+
+    <div class="slider">
+      <div class="slides">
+        <%= image_tag "https://production.autoforce.com/bns/index_bns/000/027/283/fill_1500_550/banner_2.png?1725680071", class: "slide" %>
+        <%= image_tag "https://production.autoforce.com/uploads/banner/image/89082/full_comprar-dealer-seminovos_2fda77315e.jpeg.webp", class: "slide" %>
+        <%= image_tag "https://production.autoforce.com/uploads/banner/image/27296/full_comprar-dealer-seminovos_7f8b1e1f3b.jpg.webp", class: "slide" %>
+      </div>
+
+      <%= button_tag class: 'nav prev', onclick: 'nextSlide(-1)' do %>
+        <i class="fa-solid fa-less-than"></i>
+      <% end %>
+
+      <%= button_tag class: 'nav next', onclick: 'nextSlide(1)' do %>
+        <i class="fa-solid fa-greater-than"></i>
+      <% end %>
+    </div>
+
+    <div class="car-list">
+      <div class="car-card">
+        <img src="https://production.autoforce.com/bns/index_bns/000/027/283/fill_1500_550/banner_2.png?1725680071" class="car-image" />
+
+        <div class="car-info">
+          <h3>Creta</h3>
+          <p class="subtitle">Platinum 1.0 TB 12V Flex Aut.</p>
+          <p class="price">R$ 145.900,00</p>
+
+          <div class="car-details">
+            <span><i class="fas fa-road"></i> 15763km</span>
+            <span><i class="fas fa-cogs"></i> Automático</span>
+            <span><i class="fas fa-calendar-alt"></i> 2021 / 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://production.autoforce.com/bns/index_bns/000/027/283/fill_1500_550/banner_2.png?1725680071" class="car-image" />
+
+        <div class="car-info">
+          <h3>Creta</h3>
+          <p class="subtitle">PULSE 1.6 AUTOMATICO</p>
+          <p class="price">R$ 89.900,00</p>
+
+          <div class="car-details">
+            <span><i class="fas fa-road"></i> 62000km</span>
+            <span><i class="fas fa-cogs"></i> Automático</span>
+            <span><i class="fas fa-calendar-alt"></i> 2017 / 2017</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://production.autoforce.com/bns/index_bns/000/027/283/fill_1500_550/banner_2.png?1725680071" class="car-image" />
+
+        <div class="car-info">
+          <h3>Creta</h3>
+          <p class="subtitle">PULSE 1.6 AUTOMATICO</p>
+          <p class="price">R$ 89.900,00</p>
+
+          <div class="car-details">
+            <span><i class="fas fa-road"></i> 62000km</span>
+            <span><i class="fas fa-cogs"></i> Automático</span>
+            <span><i class="fas fa-calendar-alt"></i> 2017 / 2017</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-list">
+      <div class="car-card">
+        <img src="https://production.autoforce.com/bns/index_bns/000/027/283/fill_1500_550/banner_2.png?1725680071" class="car-image" />
+
+        <div class="car-info">
+          <h3>Creta</h3>
+          <p class="subtitle">Platinum 1.0 TB 12V Flex Aut.</p>
+          <p class="price">R$ 145.900,00</p>
+
+          <div class="car-details">
+            <span><i class="fas fa-road"></i> 15763km</span>
+            <span><i class="fas fa-cogs"></i> Automático</span>
+            <span><i class="fas fa-calendar-alt"></i> 2021 / 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://production.autoforce.com/bns/index_bns/000/027/283/fill_1500_550/banner_2.png?1725680071" class="car-image" />
+
+        <div class="car-info">
+          <h3>Creta</h3>
+          <p class="subtitle">PULSE 1.6 AUTOMATICO</p>
+          <p class="price">R$ 89.900,00</p>
+
+          <div class="car-details">
+            <span><i class="fas fa-road"></i> 62000km</span>
+            <span><i class="fas fa-cogs"></i> Automático</span>
+            <span><i class="fas fa-calendar-alt"></i> 2017 / 2017</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://production.autoforce.com/bns/index_bns/000/027/283/fill_1500_550/banner_2.png?1725680071" class="car-image" />
+
+        <div class="car-info">
+          <h3>Creta</h3>
+          <p class="subtitle">PULSE 1.6 AUTOMATICO</p>
+          <p class="price">R$ 89.900,00</p>
+
+          <div class="car-details">
+            <span><i class="fas fa-road"></i> 62000km</span>
+            <span><i class="fas fa-cogs"></i> Automático</span>
+            <span><i class="fas fa-calendar-alt"></i> 2017 / 2017</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="https://production.autoforce.com/uploads/group/logo/1814/logo_webp_comprar-dealer-seminovos_0759c60cac.png.webp" alt="Logo" />
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Tem alguma dúvida?<br><strong>Fala com a gente</strong></h3>
+          <button class="btn-contact">Fale conosco</button>
+          
+        </div>
+
+        <div class="footer-links">
+          <h4>Links rápidos</h4>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Fale conosco</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p><strong>CNPJ:</strong> 22.588.947/0001-06 - Endereço Matriz: Av. Amintas Barros, 3700 - Torre Business - Sala 2506 - Lagoa Nova - Natal-RN</p>
+        <p>Esse site foi desenvolvido com a tecnologia <strong>Autódromo</strong> feita pela <img src="https://production.autoforce.com/uploads/group/logo/1814/logo_webp_comprar-dealer-seminovos_0759c60cac.png.webp" alt="Autoforce" height="20" /></p>
+      </div>
+    </footer>
+
+
+  </div>
+</div>
+
+<!-- Script do carrossel de imagens -->
+<script>
+  let index = 0;
+
+  function showSlide(i) {
+    const slides = document.querySelectorAll(".slide");
+    slides.forEach(slide => slide.style.display = "none");
+    slides[i].style.display = "block";
+  }
+
+  function nextSlide(n) {
+    const slides = document.querySelectorAll(".slide");
+    index = (index + n + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  // Inicia o carrossel
+  document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".slide");
+    showSlide(index);
+
+    setInterval(() => {
+      nextSlide(1);
+    }, 5000); // Troca a cada 5 segundos
+  });
+</script>
 

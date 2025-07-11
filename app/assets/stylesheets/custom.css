@@ -1,0 +1,271 @@
+/* Formatacao da pagina */
+.page-container {
+  background-color: #ddd;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #ddd;
+}
+
+*, a, b, body, em, h1, h2, h3, h4, h5, h6, html, li, p, span, strong {
+    font-family: Futura PT, sans-serif;
+    font-size: 16px;
+}
+/* Formatacao da pagina */
+
+/* Header */
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: green;
+}
+
+.search-container {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 200px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-button {
+  background-color: #009e73;      /* azul claro */
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  opacity: 0.85;
+}
+
+/* Header */
+
+
+/* Body */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav:hover {
+  opacity: 0.85;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.car-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.car-card {
+  background: #fff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-info {
+  padding: 15px;
+}
+
+.car-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.car-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: #444;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.car-details i {
+  margin-right: 5px;
+}
+
+/* Body */
+
+/* Footer */
+.site-footer {
+  background-color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo img {
+  max-height: 30px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-contact h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.btn-contact {
+  background-color: #009e73;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.footer-bottom img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Footer */
