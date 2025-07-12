@@ -1,0 +1,265 @@
+/* Formatacao da pagina */
+body, html {
+  background-color: #ddd;
+  font-family: 'Futura PT', sans-serif;
+  font-size: 16px;
+}
+
+*, a, b, em, h1, h2, h3, h4, h5, h6, li, p, span, strong {
+  font-family: 'Futura PT', sans-serif;
+  font-size: 16px;
+}
+
+.page-container {
+  background-color: #ddd;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* Formatacao da pagina */
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: green;
+}
+
+.search-container {
+  width: 200px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.search-button:hover {
+  opacity: 0.85;
+}
+/* Header */
+
+/* Body */
+.slider {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  gap: 15px;
+}
+
+.slides label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.slides input[type="text"],
+.slides textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.slide {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.nav:hover {
+  opacity: 0.85;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.car-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.car-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-image {
+  width: 100%;
+  height: 180px;
+  cursor: pointer;
+}
+
+.car-info {
+  padding: 15px;
+}
+
+.car-info h3 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 5px 0 10px;
+  color: #666;
+}
+
+.price {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+.car-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 10px;
+  color: #444;
+  border-top: 1px solid #eee;
+}
+
+.car-details i {
+  margin-right: 5px;
+}
+
+/* Body */
+
+/* Footer */
+.site-footer {
+  padding: 40px 20px 20px;
+  background-color: #fff;
+  color: #222;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.footer-logo img {
+  max-height: 30px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.footer-contact h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links li:hover {
+  color: green;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.footer-bottom img {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Footer */
+
+
+.custom-image {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto 30px;
+  border-radius: 12px;
+}

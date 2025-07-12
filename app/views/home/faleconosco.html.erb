@@ -1,0 +1,33 @@
+<div class="slider">
+  <h2>Formulário de Contato</h2>
+  <div class="slides" style="width:50%; justify-content:center; background-color: #f9f9f99d; padding: 40px; border-radius: 12px;">
+    <%= form_with(url: root_path, method: :post, local: true, id: 'contatoForm') do |form| %>
+
+      <div>
+        <%= form.label :nome, "Nome:" %><br />
+        <%= form.text_field :nome, id: 'nome' %>
+      </div>
+
+      <div>
+        <%= form.label :email, "Email:" %><br />
+        <%= form.text_field :email, id: 'email' %>
+      </div>
+
+      <div>
+        <%= form.label :mensagem, "Mensagem:" %><br />
+        <%= form.text_area :mensagem, id: 'mensagem', rows: 2 %>
+      </div>
+
+      <%= form.submit 'Enviar', class: "search-button" %>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('contatoForm');
+    form.addEventListener('submit', function(event) {
+      alert('Mensagem enviada com sucesso!');
+    });
+  });
+</script>

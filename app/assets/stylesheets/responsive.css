@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .slider {
+    padding: 10px;
+  }
+
+  .slides input[type="text"],
+  .slides textarea {
+    font-size: 16px;
+  }
+
+  .car-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .car-card {
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .car-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    padding: 0;
+  }
+
+  .custom-image {
+    margin: 20px auto;
+    width: 95%;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}

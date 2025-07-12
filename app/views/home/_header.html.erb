@@ -1,0 +1,24 @@
+<nav class="navbar">
+    <%= link_to root_path do %>
+        <%= image_tag "https://production.autoforce.com/uploads/group/logo/1814/logo_webp_comprar-dealer-seminovos_0759c60cac.png.webp", alt: "MinhaLogo", style: "height: 40px;" %>
+    <% end %>
+
+    <ul class="nav-links">
+        <li><%= link_to "Semi Novos", seminovos_path %></li>
+        <li><%= link_to "Quem Somos", quemsomos_path %></li>
+        <li><%= link_to "Fale Conosco", faleconosco_path %></li>
+        <li>
+            <%= link_to "https://api.whatsapp.com/send/?phone=551147099521" do %>
+                <i class="fa-brands fa-whatsapp"></i>
+            <% end %>
+        </li>
+
+    </ul>
+
+    <%= form_with(url: root_path, method: :get, local: true) do |form| %>
+        <%= form.text_field :query, placeholder: "Buscar...", class: 'search-container' %>
+            <%= button_tag(type: 'submit', class: 'search-button ') do %>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        <% end %>
+    <% end %>
+</nav>
