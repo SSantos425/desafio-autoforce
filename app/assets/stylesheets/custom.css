@@ -59,7 +59,7 @@ body {
 }
 
 .search-button {
-  background-color: #009e73;      /* azul claro */
+  background-color: #009e73;
   border: none;
   color: white;
   padding: 8px 12px;
@@ -190,7 +190,6 @@ body {
 .site-footer {
   background-color: #fff;
   padding: 40px 20px 20px;
-  font-family: sans-serif;
   color: #222;
 }
 
@@ -226,16 +225,6 @@ body {
   font-size: 18px;
 }
 
-.btn-contact {
-  background-color: #009e73;
-  color: #fff;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .footer-links h4 {
   margin-bottom: 10px;
   font-size: 16px;
@@ -251,9 +240,8 @@ body {
   margin-bottom: 8px;
 }
 
-.footer-links a {
-  color: #000;
-  text-decoration: none;
+.footer-links li:hover {
+  color: green;
 }
 
 .footer-bottom {

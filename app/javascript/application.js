@@ -2,7 +2,7 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import React from 'react';
 import { createRoot } from 'react-dom/client'
-import BasicButtons from './components/header';
+import BasicButtons from './components/button';
 
 function App() {
     return (<> 
@@ -11,5 +11,5 @@ function App() {
 }
 
 
-const root = createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('button'));
 root.render(<App />);
