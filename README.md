@@ -69,7 +69,7 @@ Outro aprendizado valioso foi sobre responsividade. Ao testar a página em dispo
 
 1. Clone o repositório:
 
-   git clone git@github.com:SSantos425/desafio-autoforce.git
-   cd desafio-autoforce
-   bundle install
-   bin/dev
+- git clone git@github.com:SSantos425/desafio-autoforce.git
+- cd desafio-autoforce
+- bundle install
+- bin/dev
