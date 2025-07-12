@@ -66,6 +66,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-
-gem "font-awesome-rails"
 gem "rubocop"

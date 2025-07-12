@@ -107,8 +107,6 @@ GEM
     drb (2.2.3)
     erb (5.0.1)
     erubi (1.13.1)
-    font-awesome-rails (4.7.0.9)
-      railties (>= 3.2, < 9.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -309,7 +307,6 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  font-awesome-rails
   jbuilder
   jsbundling-rails
   puma (>= 5.0)
