@@ -10,6 +10,5 @@ function App() {
     </>);
 }
 
-
 const root = createRoot(document.getElementById('button'));
 root.render(<App />);
