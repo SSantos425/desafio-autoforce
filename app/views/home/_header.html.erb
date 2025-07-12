@@ -7,6 +7,12 @@
         <li><%= link_to "Semi Novos", seminovos_path %></li>
         <li><%= link_to "Quem Somos", quemsomos_path %></li>
         <li><%= link_to "Fale Conosco", faleconosco_path %></li>
+        <li>
+            <%= link_to "https://api.whatsapp.com/send/?phone=551147099521" do %>
+                <i class="fa-brands fa-whatsapp"></i>
+            <% end %>
+        </li>
+
     </ul>
 
     <%= form_with(url: root_path, method: :get, local: true) do |form| %>
