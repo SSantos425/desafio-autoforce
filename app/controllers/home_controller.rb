@@ -13,4 +13,8 @@ class HomeController < ApplicationController
   def faleconosco
 
   end
+
+  def corolla
+    
+  end
 end

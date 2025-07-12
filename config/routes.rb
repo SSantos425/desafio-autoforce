@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get 'seminovos', to: 'home#seminovos', as: 'seminovos'
   get 'quemsomos', to: 'home#quemsomos', as: 'quemsomos'
   get 'faleconosco', to: 'home#faleconosco', as: 'faleconosco'
+  get 'corolla', to: 'home#corolla', as: 'corolla'
 
 end

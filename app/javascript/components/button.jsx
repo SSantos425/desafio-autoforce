@@ -5,7 +5,7 @@ export default function BasicButtons() {
   return (
     <Button
       component="a"
-      href="/"
+      href="/faleconosco"
       variant="contained"
       color="success"
     >

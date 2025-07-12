@@ -1,4 +1,15 @@
 /* Formatacao da pagina */
+body, html {
+  background-color: #ddd;
+  font-family: 'Futura PT', sans-serif;
+  font-size: 16px;
+}
+
+*, a, b, em, h1, h2, h3, h4, h5, h6, li, p, span, strong {
+  font-family: 'Futura PT', sans-serif;
+  font-size: 16px;
+}
+
 .page-container {
   background-color: #ddd;
 }
@@ -9,23 +20,15 @@
   background-color: #fff;
 }
 
-body {
-  background-color: #ddd;
-}
-
-*, a, b, body, em, h1, h2, h3, h4, h5, h6, html, li, p, span, strong {
-  font-family: Futura PT, sans-serif;
-  font-size: 16px;
-}
 /* Formatacao da pagina */
 
 /* Header */
 .navbar {
-  background-color: #fff;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
 }
 
 .nav-links {
@@ -33,7 +36,6 @@ body {
   gap: 15px;
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .nav-links a {
@@ -47,68 +49,74 @@ body {
 }
 
 .search-container {
-  padding: 6px 12px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  font-size: 14px;
   width: 200px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
   outline: none;
   transition: 0.3s;
 }
 
 .search-button {
-  background-color: #009e73;
-  border: none;
-  color: white;
   padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: background-color 0.5s ease;
+  border: none;
+  border-radius: 12px;
+  background-color: green;
+  color: #fff;
   cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
 .search-button:hover {
   opacity: 0.85;
 }
-
 /* Header */
-
 
 /* Body */
 .slider {
   position: relative;
-  width: 100%;
   max-width: 1000px;
   margin: auto;
-  border-radius: 12px;
   padding: 10px;
+  border-radius: 12px;
+  width: 100%;
 }
 
 .slides {
   display: flex;
+  flex-direction: column;
   transition: transform 0.5s ease-in-out;
+  gap: 15px;
 }
 
+.slides label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.slides input[type="text"],
+.slides textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
 
 .slide {
-  min-width: 100%;
-  object-fit: cover;
   border-radius: 12px;
   cursor: pointer;
 }
 
-
 .nav {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  background-color: white;
-  border: none;
   padding: 10px;
+  border: none;
   border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
+  background-color: white;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .nav:hover {
@@ -125,30 +133,28 @@ body {
 
 .car-list {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
   padding: 20px;
 }
 
 .car-card {
-  background: #fff;
   width: 300px;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease;
 }
 
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
 .car-image {
   width: 100%;
   height: 180px;
-  object-fit: cover;
   cursor: pointer;
-}
-
-.car-card:hover {
-  transform: translateY(-5px);
 }
 
 .car-info {
@@ -157,31 +163,27 @@ body {
 
 .car-info h3 {
   margin: 0;
-  font-size: 18px;
 }
 
 .subtitle {
-  color: #666;
-  font-size: 14px;
   margin: 5px 0 10px;
+  color: #666;
 }
 
 .price {
-  font-weight: bold;
-  font-size: 18px;
-  color: #000;
   margin-bottom: 15px;
+  font-weight: bold;
+  color: #000;
 }
 
 .car-details {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px;
-  font-size: 14px;
+  padding-top: 10px;
   color: #444;
   border-top: 1px solid #eee;
-  padding-top: 10px;
-  justify-content: space-between;
 }
 
 .car-details i {
@@ -192,15 +194,15 @@ body {
 
 /* Footer */
 .site-footer {
-  background-color: #fff;
   padding: 40px 20px 20px;
+  background-color: #fff;
   color: #222;
 }
 
 .footer-top {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 20px;
 }
 
@@ -210,29 +212,21 @@ body {
 }
 
 .social-icons a {
-  margin: 0 5px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 50%;
 }
-
 
 .footer-contact h3 {
   margin: 0 0 10px;
   font-size: 18px;
-}
-
-.footer-links h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #666;
 }
 
 .footer-links ul {
@@ -251,21 +245,21 @@ body {
 .footer-bottom {
   margin-top: 20px;
   text-align: center;
-  font-size: 12px;
   color: #666;
 }
 
 .footer-bottom img {
-  vertical-align: middle;
   margin-left: 5px;
+  vertical-align: middle;
 }
 
 /* Footer */
 
+
 .custom-image {
+  display: block;
   width: 100%;
   max-width: 1200px;
-  display: block;
-  margin: 0 auto 30px auto;
+  margin: 30px auto 30px;
   border-radius: 12px;
 }

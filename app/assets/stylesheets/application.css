@@ -13,5 +13,6 @@
  *= require_tree .
  *= require_self
  *= custom
+ *= responsive
  *= require font-awesome
  */
